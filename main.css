@@ -70,9 +70,46 @@ hr {
 
 /* contact page */
 
-#emailAlt p a{
+.contact button {
+	grid-area: submit;
+}
+
+#emailInput, #nameInput, #messageInput {
+	background-color: var(--b-col-front);
+	border: none;
+	box-shadow: var(--shadow-0-10-16);
+	border-radius: var(--corner);
+	min-height: 32px;
+	padding-left: 8px;
+	font-size: 16px;
+}
+
+#emailInput {
+	grid-area: email;
+}
+
+#nameInput {
+	grid-area: name;
+}
+
+#messageInput {
+	grid-area: message;
+	height: 300px;
+	line-height: 12pt;
+}
+
+#emailAlt {
+	grid-area: alternative;
+	text-align: center;
+}
+
+#emailAlt p a {
 	color: var(--col-main);
 	text-decoration: var(--col-acc) wavy underline;
+}
+
+#emailAlt hr {
+	margin-bottom: 12px;
 }
 
 /* general classes */
@@ -131,43 +168,6 @@ hr {
 		'message message'
 		'submit submit'
 		'alternative alternative';
-}
-
-.contact button {
-	grid-area: submit;
-}
-
-#emailInput, #nameInput, #messageInput {
-	background-color: var(--b-col-front);
-	border: none;
-	box-shadow: var(--shadow-0-10-16);
-	border-radius: var(--corner);
-	min-height: 32px;
-	padding-left: 8px;
-	font-size: 16px;
-}
-
-#emailInput {
-	grid-area: email;
-}
-
-#nameInput {
-	grid-area: name;
-}
-
-#messageInput {
-	grid-area: message;
-	height: 300px;
-	line-height: 12pt;
-}
-
-#emailAlt {
-	grid-area: alternative;
-	text-align: center;
-}
-
-#emailAlt hr {
-	margin-bottom: 12px;
 }
 
 .content article {
