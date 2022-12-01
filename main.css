@@ -6,9 +6,9 @@
 	--col-main: #3a795e;
 	--col-acc: #ecc795;
 	--corner: 5px;
-	--gap-24: 24px;
-	--gap-12: 12px;
-	--gap-6: 6px;
+	--gap-str: 24px;
+	--gap-md: 12px;
+	--gap-lt: 6px;
 	--blur: 3px;
 	--darken-background: 100%;
 	--shadow-0-10-16: 0 10px 16px rgba(0, 0, 0, 0.2);
@@ -25,20 +25,21 @@ html {
 }
 
 hr {
-	border: 2px solid var(--col-acc);
+	border: none;
+	border-bottom: 4px solid var(--col-acc);
 }
 
 /* home page */
 
 #home_body {
 	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-columns: 1fr minmax(420px, 4fr) 1fr;
 	grid-template-rows: auto;
 	grid-template-areas:
 		'. logo .'
 		'. main .'
 		'. foot .';
-	gap: var(--gap-12);
+	gap: var(--gap-md) 0;
 }
 
 #home_logo {
@@ -59,14 +60,20 @@ hr {
 
 /* articles page */
 
-#articles_body {
+#nav_body {
 	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-columns: 1fr minmax(480px, 4fr) 1fr;
 	grid-template-rows: 70px 1fr 50px;
 	grid-template-areas: '. nav .''. main .''. foot .';
-	gap: var(--gap-12);
+	/* gap: var(--gap-md) 0; */
 }
 
+/* contact page */
+
+#emailAlt p a{
+	color: var(--col-main);
+	text-decoration: var(--col-acc) wavy underline;
+}
 
 /* general classes */
 
@@ -109,16 +116,12 @@ hr {
 	float: right;
 }
 
-/* .content, .contact {
-	min-width: 500px;
-} */
-
 .content {
 	grid-area: main;
 	margin-bottom: 50px;
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: var(--gap-12);
+	gap: var(--gap-md);
 }
 
 .contact {
@@ -168,11 +171,11 @@ hr {
 }
 
 .content article {
-	gap: var(--gap-24);
+	gap: var(--gap-str);
 	margin: 0 0 20px 0;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, calc(50% - var(--gap-12)));
+	grid-template-columns: repeat(2, calc(50% - var(--gap-md)));
 }
 
 .button {
@@ -209,7 +212,6 @@ hr {
 	aspect-ratio: 1 / 1;
 	width: 100%;
 	height: auto;
-	/* margin: auto; */
 	float: right;
 	box-shadow: rgba(0, 0, 0, 0.05) 0 4px 8px;
 	border-radius: var(--corner);
@@ -220,7 +222,7 @@ hr {
 @media only screen and (min-width:1500px) {
 
 	#home_body,
-	#articles_body {
+	#nav_body {
 		grid-template-columns: 1fr 1000px 1fr;
 	}
 }
@@ -258,7 +260,7 @@ hr {
 	#home_body {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;
-		gap: var(--gap-12);
+		gap: var(--gap-md);
 		grid-template-areas:
 			'logo'
 			'main'
@@ -266,11 +268,12 @@ hr {
 		padding: 0 40px;
 	}
 
-	#articles_body {
+	#nav_body {
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			'nav'
 			'main'
 			'foot';
+		padding: 0 10px;
 	}
 }
