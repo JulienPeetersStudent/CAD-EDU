@@ -154,11 +154,11 @@ hr {
 }
 
 .content article {
-	gap: var(--gap-str);
 	margin: 0 0 20px 0;
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, calc(50% - var(--gap-md)));
+	grid-template-rows: auto 50px;
 }
 
 .content article p {
@@ -181,6 +181,7 @@ hr {
 }
 
 .button {
+	box-sizing: border-box;
 	grid-column: 1/3;
 	width: 200px;
 	height: 50px;
@@ -199,6 +200,7 @@ hr {
 	transform: rotateZ(2.5deg);
 	transform-origin: 50% 50%;
 	border: solid 2px var(--col-acc);
+	line-height: 46px;
 }
 
 
