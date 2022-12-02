@@ -18,9 +18,10 @@
 		<header id="home_header">
 			<img id="home_logo" src="assets/images/logo.svg" alt="CAD-EDU logo">
 		</header>
-		<main class="content">
+		<main class="content grid-gap-h-str">
 			<article class="grid-gap-h-str grid-gap-v-str">
 				<model-viewer
+					class="blur-background"
 					interaction-prompt="none"
 					max-camera-orbit="auto 90deg 10m"
 					min-camera-orbit="auto 45deg 10m"
@@ -29,7 +30,7 @@
 					camera-controls
 					disable-zoom
 					src="assets/models/testCube.glb"></model-viewer>
-				<p>
+				<p class="blur-background rounded">
 					<strong>
 						Our catalog of articles concerning everything from CAD software, technical
 						drawings and 3D scanning,
@@ -42,6 +43,7 @@
 			<hr>
 			<article class="grid-gap-h-str grid-gap-v-str">
 				<model-viewer
+					class="blur-background"
 					interaction-prompt="none"
 					max-camera-orbit="auto 90deg 1.5m"
 					min-camera-orbit="auto 45deg 1.5m"
@@ -51,7 +53,7 @@
 					disable-zoom
 					src="./assets/models/drillbit.glb">
 				</model-viewer>
-				<p>
+				<p class="blur-background rounded">
 					<strong>
 						Would you like to know more, do you have a suggestion or is there an issue
 						with the site? Dont

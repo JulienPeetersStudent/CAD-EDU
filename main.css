@@ -5,7 +5,7 @@
 	--b-col-front: white;
 	--col-main: #3a795e;
 	--col-acc: #ecc795;
-	--corner: 5px;
+	--corner: 6px;
 	--gap-str: 24px;
 	--gap-md: 12px;
 	--gap-lt: 6px;
@@ -30,8 +30,12 @@ body, html {
 }
 
 hr {
+	background-color: var(--col-acc);
+	border-radius: 2px;
 	border: none;
-	border-bottom: 4px solid var(--col-acc);
+	height: 4px;
+	width: 66%;
+	margin: auto;
 }
 
 /* general classes */
@@ -96,6 +100,11 @@ hr {
 	box-shadow: var(--shadow-0-10-16);
 }
 
+.blur-background {
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+}
+
 .nav {
 	display: flex;
 	background-color: var(--col-main);
@@ -146,19 +155,18 @@ hr {
 
 .content {
 	grid-area: main;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: var(--gap-md);
 	height: max-content;
 }
 
 .content article {
-	margin: 0 0 20px 0;
+	/* margin: 0 0 20px 0; */
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, calc(50% - var(--gap-md)));
-	grid-template-rows: auto 50px;
+	grid-template-rows: repeat(auto-fill, auto) 50px;
 }
 
 .content article p {
@@ -176,8 +184,6 @@ hr {
 	float: right;
 	box-shadow: rgba(0, 0, 0, 0.05) 0 4px 8px;
 	border-radius: var(--corner);
-	backdrop-filter: blur(var(--blur)) brightness(var(--darken-background));
-	-webkit-backdrop-filter: blur(var(--blur)) brightness(var(--darken-background));
 }
 
 .button {
@@ -259,13 +265,14 @@ hr {
 
 #map {
 	grid-area: map;
-	margin: 10px;
+	/* margin: 10px; */
 	border: solid var(--col-acc) 2px;
 	aspect-ratio: 3/2;
 }
 
 #emailInput, #nameInput, #messageInput {
 	background-color: var(--b-col-front);
+	box-sizing: border-box;
 	border: none;
 	border-radius: var(--corner);
 	min-height: 32px;
@@ -273,8 +280,22 @@ hr {
 	font-size: 16px;
 }
 
-#emailInput:invalid, #nameInput:invalid, #messageInput:invalid {
+#emailInput:valid,
+#nameInput:valid,
+#messageInput:valid {
+	border: solid var(--col-main) 2px;
+}
+
+#emailInput:not(:placeholder-shown):invalid,
+#nameInput:not(:placeholder-shown):invalid,
+#messageInput:not(:placeholder-shown):invalid {
 	border: solid red 2px;
+}
+
+#emailInput:focus,
+#nameInput:focus,
+#messageInput:focus {
+	outline: none;
 }
 
 #emailInput {
@@ -290,11 +311,18 @@ hr {
 	height: 300px;
 	line-height: 12pt;
 	padding: 8px;
+	resize: vertical;
 }
 
 #emailAlt {
 	grid-area: alternative;
 	text-align: center;
+}
+
+#emailAlt p {
+	background-color: var(--b-col-front);
+	width: max-content;
+	margin: auto;
 }
 
 #emailAlt p a {
