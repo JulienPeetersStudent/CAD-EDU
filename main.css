@@ -271,6 +271,10 @@ hr {
 	font-size: 16px;
 }
 
+#emailInput:invalid, #nameInput:invalid, #messageInput:invalid {
+	border: solid red 2px;
+}
+
 #emailInput {
 	grid-area: email;
 }

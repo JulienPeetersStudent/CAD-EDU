@@ -20,8 +20,14 @@
 		</header>
 		<main class="content">
 			<article class="">
-				<model-viewer interaction-prompt="none" auto-rotate camera-controls
-					shadow-intensity="0"
+				<model-viewer
+					interaction-prompt="none"
+					max-camera-orbit="auto 90deg 10m"
+					min-camera-orbit="auto 45deg 10m"
+					camera-target="0m 0m 0m"
+					auto-rotate
+					camera-controls
+					disable-zoom
 					src="assets/models/testCube.glb"></model-viewer>
 				<p>
 					<strong>
@@ -39,7 +45,7 @@
 					interaction-prompt="none"
 					max-camera-orbit="auto 90deg 1.5m"
 					min-camera-orbit="auto 45deg 1.5m"
-					camera-target="0 15cm 0"
+					camera-target="0m 15cm 0m"
 					auto-rotate
 					camera-controls
 					disable-zoom
