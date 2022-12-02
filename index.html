@@ -20,7 +20,7 @@
 		</header>
 		<main class="content">
 			<article class="">
-				<model-viewer camera-controls shadow-intensity="0"
+				<model-viewer interaction-prompt="none" auto-rotate  camera-controls shadow-intensity="0"
 					src="assets/models/testCube.glb"></model-viewer>
 				<p>
 					<strong>
@@ -34,8 +34,16 @@
 			</article>
 			<hr>
 			<article class="">
-				<model-viewer camera-controls shadow-intensity="1"
-					src="assets/models/Suzanne.glb"></model-viewer>
+				<model-viewer 
+					interaction-prompt="none"
+					max-camera-orbit="auto 90deg 1.5m"
+					min-camera-orbit="auto 45deg 1.5m"
+					camera-target="0 15cm 0"
+					auto-rotate
+					camera-controls
+					disable-zoom
+					src="./assets/models/drillbit.glb">
+				</model-viewer>
 				<p>
 					<strong>
 						Would you like to know more, do you have a suggestion or is there an issue
@@ -44,17 +52,7 @@
 						to let us know!
 					</strong>
 				</p>
-				<a class="button" href="contact.html">Contact</a>
-			</article>
-			<hr>
-			<article class="">
-				<model-viewer></model-viewer>
-				<p>
-					<strong>
-						Where we came from, why we're doing this and the experiences driving this.
-					</strong>
-				</p>
-				<a class="button" href="about_us.html">About Us</a>
+				<a class="button" href="contact.html">Contact Us</a>
 			</article>
 		</main>
 		<footer class="foot"><p class="fRight">AP Hogeschool 2022</p><p class="fLeft">s120937</p></footer>
