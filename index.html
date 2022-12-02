@@ -20,7 +20,8 @@
 		</header>
 		<main class="content">
 			<article class="">
-				<model-viewer interaction-prompt="none" auto-rotate  camera-controls shadow-intensity="0"
+				<model-viewer interaction-prompt="none" auto-rotate camera-controls
+					shadow-intensity="0"
 					src="assets/models/testCube.glb"></model-viewer>
 				<p>
 					<strong>
@@ -30,11 +31,11 @@
 						CNC machining, 3D printing and robotics/mechanics.
 					</strong>
 				</p>
-				<a class="button" href="articles.html">Articles</a>
+				<a class="button shadow rounded" href="articles.html">Articles</a>
 			</article>
 			<hr>
 			<article class="">
-				<model-viewer 
+				<model-viewer
 					interaction-prompt="none"
 					max-camera-orbit="auto 90deg 1.5m"
 					min-camera-orbit="auto 45deg 1.5m"
@@ -52,12 +53,16 @@
 						to let us know!
 					</strong>
 				</p>
-				<a class="button" href="contact.html">Contact Us</a>
+				<a class="button shadow rounded" href="contact.html">Contact Us</a>
 			</article>
 		</main>
-		<footer class="foot"><p class="fRight">AP Hogeschool 2022</p><p class="fLeft">s120937</p></footer>
+		<footer class="foot shadow">
+			<p class="fRight">AP Hogeschool 2022</p>
+			<p class="fLeft">s120937</p>
+		</footer>
 		<script type="module"
 			src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script src="./main.js"></script>
 	</body>
 
 </html>

@@ -11,43 +11,62 @@
 			href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+			integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+			crossorigin="" />
 		<title>Articles - CAD-EDU</title>
 	</head>
 
 	<body id="nav_body">
-		<nav class="nav">
+		<nav class="nav rounded shadow z3">
 			<a href="index.html" id="link_home">
 				<img src="assets/images/logo.svg" alt="CAD-EDU logo, link to
 					homepage">
 			</a>
 			<h1 class="nav_page_title">Contact</h1>
 		</nav>
-		<main class="content contact">
+		<main class="content contact z1">
+			<map id="map" class="rounded shadow"></map>
 			<input
+				class="shadow"
 				required
 				placeholder="Enter your e-mail address"
 				type="email"
 				name="email"
 				id="emailInput">
 			<input
+				class="shadow"
 				required
 				placeholder="Enter your name"
 				type="text"
 				name="name"
 				id="nameInput">
 			<textarea
+				class="shadow"
 				required
 				placeholder="Message here"
 				type="text"
 				name="message"
 				id="messageInput"></textarea>
-			<button class="button" type="submit">Submit</button>
+			<button class="button shadow rounded" type="submit">Submit</button>
 			<section id="emailAlt">
 				<hr>
-				<p>Or you could use <a href="mailto:example@email.xyz">your own e-mail
-						client</a> if you'd prefer.</p>
+				<p>
+					Or you could use
+					<a href="mailto:example@email.xyz">
+						your own e-mail client
+					</a>
+					if you'd prefer.
+				</p>
 			</section>
 		</main>
+		<footer class="foot shadow"><p class="fRight">AP Hogeschool 2022</p><p
+				class="fLeft">s120937</p></footer>
+		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+			integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+			crossorigin=""></script>
+		<script src="./main.js"></script>
 	</body>
 
 </html>
