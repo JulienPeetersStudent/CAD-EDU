@@ -219,7 +219,6 @@ hr {
 		'. logo .'
 		'. main .'
 		'. foot .';
-	gap: var(--gap-md) 0;
 }
 
 #home_logo {
