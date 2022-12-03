@@ -379,7 +379,7 @@ hr {
 
 #emailAlt p a {
 	color: var(--col-main);
-	text-decoration: var(--col-acc) wavy underline;
+	text-decoration: var(--col-main) wavy underline;
 }
 
 #emailAlt hr {
