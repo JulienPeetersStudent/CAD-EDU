@@ -1,7 +1,7 @@
 const nav = document.querySelector(".nav");
 nav.innerHTML += `
 <a href="../index.html" id="linkHome">
-	<img src = "../assets/images/logo.svg" alt = "CAD-EDU logo, link to homepage">
+	<img src="../assets/images/logo.svg" alt="CAD-EDU logo, link to homepage">
 </a >
 <section class="navpageTitle rounded">
 	<h1 class="PageTitle">▾Pages▾</h1>
