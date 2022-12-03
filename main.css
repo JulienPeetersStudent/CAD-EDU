@@ -111,10 +111,10 @@ hr {
 	width: max-content;
 	height: 50px;
 	grid-area: nav;
-	margin: 10px auto;
+	margin: var(--gap-str) auto;
 	position: sticky;
 	position: -webkit-sticky;
-	top: 10px;
+	top: 12px;
 	z-index: 100;
 }
 
@@ -296,7 +296,7 @@ hr {
 #nav_body {
 	display: grid;
 	grid-template-columns: 1fr minmax(480px, 4fr) 1fr;
-	grid-template-rows: 70px 1fr 50px;
+	grid-template-rows: 98px 1fr 50px;
 	grid-template-areas: '. nav .''. main .''. foot .';
 	/* gap: var(--gap-md) 0; */
 }
