@@ -21,29 +21,31 @@
 	<body id="navBody">
 		<nav class="nav rounded shadow z3"></nav>
 		<main class="content C1 contact z1 grid-gap-h-str grid-gap-v-str">
-			<map id="map" class="rounded shadow"></map>
-			<input
-				class="shadow"
-				required
-				placeholder="Enter your e-mail address"
-				type="email"
-				name="email"
-				id="emailInput">
-			<input
-				class="shadow"
-				required
-				placeholder="Enter your name"
-				type="text"
-				name="name"
-				id="nameInput">
-			<textarea
-				class="shadow"
-				required
-				placeholder="Message here"
-				type="text"
-				name="message"
-				id="messageInput"></textarea>
-			<button class="button shadow rounded" type="submit">Submit</button>
+			<map id="map" class="rounded shadow accOutline"></map>
+			<form class="grid-gap-h-str grid-gap-v-str" action="https://some.email.server/CAD-EDU" method="post">
+				<input
+					class="shadow accOutline"
+					required
+					placeholder="Enter your e-mail address"
+					type="email"
+					name="email"
+					id="emailInput">
+				<input
+					class="shadow accOutline"
+					required
+					placeholder="Enter your name"
+					type="text"
+					name="name"
+					id="nameInput">
+				<textarea
+					class="shadow accOutline"
+					required
+					placeholder="Message here"
+					type="text"
+					name="message"
+					id="messageInput"></textarea>
+				<button class="button shadow rounded" type="submit">Submit</button>
+			</form>
 			<section id="emailAlt">
 				<hr>
 				<p>

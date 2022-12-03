@@ -4,7 +4,7 @@ nav.innerHTML += `
 	<img src = "../assets/images/logo.svg" alt = "CAD-EDU logo, link to homepage">
 </a >
 <section class="navpageTitle rounded">
-	<h1 class="PageTitle">Pages</h1>
+	<h1 class="PageTitle">▾Pages▾</h1>
 	<ul class="dropdown rounded">
 		<a href="../contact.html">
 			<h1 class="PageTitle">Contact</h1>
