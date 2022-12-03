@@ -497,9 +497,7 @@ hr {
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			'map'
-			'email'
-			'name'
-			'message'
+			'form'
 			'submit'
 			'alternative';
 	}
@@ -518,7 +516,6 @@ hr {
 	#homeBody {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;
-		gap: var(--gap-md);
 		grid-template-areas:
 			'logo'
 			'main'
