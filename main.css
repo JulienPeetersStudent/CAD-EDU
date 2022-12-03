@@ -25,7 +25,6 @@ html {
 }
 
 body, html {
-	height: 100%;
 	min-height: 100% !important;
 }
 
@@ -158,16 +157,15 @@ hr {
 	box-sizing: border-box;
 }
 
-.dropdown ul a {}
-
 .dropdown ul li {
 	float: right;
 	line-height: 20px;
 	height: 20px;
 	margin: 4px 4px 4px 16px;
-	list-style: none;
+	list-style-type: "▸";
 	color: var(--b-col-front);
 	text-decoration: none;
+	transform: translateX(8px);
 }
 
 .dropdown ul li:last-of-type {
@@ -327,7 +325,7 @@ hr {
 #emailInput, #nameInput, #messageInput {
 	background-color: var(--b-col-front);
 	box-sizing: border-box;
-	border: none;
+	border: solid var(--col-acc) 2px;
 	border-radius: var(--corner);
 	min-height: 32px;
 	padding-left: 8px;
