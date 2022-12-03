@@ -24,7 +24,7 @@ nav.innerHTML += `
 				<a href="../articles/CnC_Machining.html">CNC machines</a>
 			</li>
 			<li>
-				<a href="../articles/Factory_Lines.html">Factory Lines</a>
+				<a href="../articles/Production_Lines.html">Production Lines</a>
 			</li>
 			<li>
 				<a href="../articles/REPRAP.html">REPRAP</a>

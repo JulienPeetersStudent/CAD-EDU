@@ -105,11 +105,11 @@ hr {
 	-webkit-backdrop-filter: blur(var(--blur));
 }
 
-.mainOutline{
+.mainOutline {
 	outline: solid 2px var(--col-main);
 }
 
-.accOutline{
+.accOutline {
 	outline: solid 2px var(--col-acc);
 }
 
@@ -133,7 +133,7 @@ hr {
 	transition: 0.1s ease-in-out;
 }
 
-#linkHome:hover{
+#linkHome:hover {
 	transform: rotateZ(2.5deg);
 }
 
@@ -148,11 +148,11 @@ hr {
 	height: 340px;
 }
 
-.navpageTitle:hover > h1{
+.navpageTitle:hover>h1 {
 	color: var(--col-acc);
 }
 
-.navpageTitle > h1{
+.navpageTitle>h1 {
 	margin: 0 auto;
 }
 
@@ -204,7 +204,7 @@ hr {
 .dropdown ul li {
 	float: right;
 	line-height: 20px;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: left;
 	height: 20px;
 	margin: 4px 4px 4px 16px;
@@ -232,8 +232,7 @@ hr {
 .foot {
 	grid-area: foot;
 	margin-top: auto;
-	border: solid 2px var(--col-acc);
-	border-bottom: none;
+	outline: solid 2px var(--col-acc);
 	height: 30px;
 	background-color: var(--b-col-front);
 	border-radius: var(--corner) var(--corner) 0 0;
@@ -339,28 +338,28 @@ hr {
 	display: grid;
 	grid-template-columns: 1fr minmax(480px, 4fr) 1fr;
 	grid-template-rows: 98px 1fr 50px;
-	grid-template-areas: '. nav .''. main .''. foot .';
+	grid-template-areas: '. nav .''aside main .''. foot .';
 	/* gap: var(--gap-md) 0; */
 }
 
-.articleLayout{
+.articleLayout {
 	display: grid;
 	grid-area: main;
 	height: max-content;
 }
 
-.articleLayout a{
+.articleLayout a {
 	aspect-ratio: 2/1;
 	display: grid;
 	grid-template-areas: 'text image';
 	transition: 0.1s ease-in-out;
 }
 
-.articleLayout a:hover{
+.articleLayout a:hover {
 	transform: translateY(-8px);
 }
 
-.articleLayout a h2{
+.articleLayout a h2 {
 	color: var(--col-main);
 	font-size: 24px;
 	margin: 8px;
@@ -368,14 +367,14 @@ hr {
 	grid-area: text;
 }
 
-.articleLayout a p{
+.articleLayout a p {
 	margin: 38px 4px 4px 8px;
 	grid-area: text;
 	color: rgb(0, 0, 0);
 	font-size: 16px;
 }
 
-.articleLayout a img{
+.articleLayout a img, .articleLayout a video {
 	width: 100%;
 	margin: 0 0 0 auto;
 	aspect-ratio: 1/1;
@@ -392,7 +391,7 @@ hr {
 		'alternative';
 }
 
-.contact form{
+.contact form {
 	display: grid;
 	grid-template-areas:
 		'email name'
@@ -489,7 +488,7 @@ hr {
 		font-size: 16pt;
 	}
 
-	.articleLayout{
+	.articleLayout {
 		grid-template-columns: 1fr;
 	}
 
@@ -533,5 +532,9 @@ hr {
 			'main'
 			'foot';
 		padding: 0 10px;
+	}
+
+	#navbody aside {
+		display: none;
 	}
 }
