@@ -39,6 +39,11 @@ hr {
 	margin: auto;
 }
 
+:not(p) {
+	user-select: none;
+	-webkit-user-select: none;
+}
+
 /* general classes */
 
 .z1 {
