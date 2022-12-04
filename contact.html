@@ -1,79 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/CAD-EDU/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-      crossorigin=""
-    />
-    <title>Contact - CAD-EDU</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/CAD-EDU/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+		<title>Contact - CAD-EDU</title>
+	</head>
 
-  <body id="navBody">
-    <nav class="nav rounded shadow z3"></nav>
-    <main class="content C1 contact z1 grid-gap-h-str grid-gap-v-str">
-      <map id="map" class="rounded shadow accOutline"></map>
-      <form
-        class="grid-gap-h-str grid-gap-v-str"
-        action="https://some.email.server/CAD-EDU"
-        method="post"
-      >
-        <input
-          class="shadow accOutline"
-          required
-          placeholder="Enter your e-mail address"
-          type="email"
-          name="email"
-          id="emailInput"
-        />
-        <input
-          class="shadow accOutline"
-          required
-          placeholder="Enter your name"
-          type="text"
-          name="name"
-          id="nameInput"
-        />
-        <textarea
-          class="shadow accOutline"
-          required
-          placeholder="Message here"
-          type="text"
-          name="message"
-          id="messageInput"
-        ></textarea>
-        <button class="button shadow rounded" type="submit">Submit</button>
-      </form>
-      <section id="emailAlt">
-        <hr />
-        <p>
-          Or you could use
-          <a href="mailto:example@email.xyz"> your own e-mail client </a>
-          if you'd prefer.
-        </p>
-      </section>
-    </main>
-    <footer class="foot shadow">
-      <p class="fRight">AP Hogeschool 2022</p>
-      <p class="fLeft">s120937</p>
-    </footer>
-    <script
-      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-      crossorigin=""
-    ></script>
-    <script src="/CAD-EDU/main.js"></script>
-    <script src="/CAD-EDU/map.js"></script>
-  </body>
+	<body id="navBody">
+		<nav class="nav rounded shadow z3"></nav>
+		<main class="content C1 contact z1 grid-gap-h-str grid-gap-v-str">
+			<map id="map" class="rounded shadow accOutline"></map>
+			<form class="grid-gap-h-str grid-gap-v-str" action="https://some.email.server/CAD-EDU" method="post">
+				<input class="shadow accOutline" required placeholder="Enter your e-mail address" type="email" name="email" id="emailInput" />
+				<input class="shadow accOutline" required placeholder="Enter your name" type="text" name="name" id="nameInput" />
+				<textarea class="shadow accOutline" required placeholder="Message here" type="text" name="message" id="messageInput"></textarea>
+				<button class="button shadow rounded" type="submit">Submit</button>
+			</form>
+			<section id="emailAlt">
+				<hr />
+				<p>
+					Or you could use
+					<a href="mailto:example@email.xyz"> your own e-mail client </a>
+					if you'd prefer.
+				</p>
+			</section>
+		</main>
+		<footer class="foot shadow">
+			<p class="fRight">AP Hogeschool 2022</p>
+			<p class="fLeft">s120937</p>
+		</footer>
+		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+		<script src="/CAD-EDU/main.js"></script>
+		<script src="/CAD-EDU/map.js"></script>
+	</body>
 </html>
