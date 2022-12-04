@@ -134,7 +134,7 @@ hr {
 }
 
 #linkHome:hover {
-	transform: rotateZ(2.5deg);
+	transform: translateY(-8px);
 }
 
 .navpageTitle {
@@ -299,7 +299,7 @@ hr {
 }
 
 .button:hover {
-	transform: rotateZ(2.5deg);
+	transform: translateY(-8px);
 	transform-origin: 50% 50%;
 	outline: solid 2px var(--col-acc);
 	line-height: 46px;
