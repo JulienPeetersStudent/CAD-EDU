@@ -352,6 +352,27 @@ hr {
 	/* gap: var(--gap-md) 0; */
 }
 
+#blogBody {
+	display: grid;
+	grid-template-columns: 1fr minmax(10px, 2fr) minmax(10px, 2fr) 1fr;
+	grid-template-rows: 98px 1fr 50px;
+	grid-template-areas: 
+		". title nav ." 
+		". main main ." 
+		". foot foot .";
+	/* gap: var(--gap-md) 0; */
+}
+
+#blogBody .nav{
+	margin-right: auto;
+	margin-left: 6px;
+}
+
+.articleTitle{
+	grid-area: title;
+	margin: auto 6px auto auto;
+}
+
 .articleLayout {
 	display: grid;
 	grid-area: main;
