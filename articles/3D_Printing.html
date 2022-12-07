@@ -12,8 +12,10 @@
 	</head>
 
 	<body id="blogBody">
-		<nav class="nav rounded shadow z3"></nav>
-		<h1 class="articleTitle rounded blur-background">3D Printing</h1>
+		<nav class="nav">
+			<h1 class="articleTitle rounded blur-background">3D Printing</h1>
+			<section id="nav" class="rounded shadow z3"></section>
+		</nav>
 		<main class="content z1 grid-gap-h-str grid-gap-v-str">
 			<section class="articleBody blur-background rounded shadow">
 				<model-viewer class="blur-background fLeft rounded accOutline" interaction-prompt="none" min-camera-orbit="auto 60deg 3m" max-camera-orbit="auto 90deg 3m" camera-orbit="0deg 90deg 2m" auto-rotate camera-target="0m 0.387995m 0m" disable-zoom camera-controls environment-image="/assets/images/studio.hdr" src="/assets/models/3dPrinter.glb"></model-viewer>

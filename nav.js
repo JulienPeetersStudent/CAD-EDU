@@ -1,5 +1,5 @@
-if (document.querySelector(".nav")) {
-	document.querySelector(".nav").innerHTML += `
+if (document.querySelector("#nav")) {
+	document.querySelector("#nav").innerHTML += `
 	<a href="/index.html" id="linkHome">
 		<img src="/assets/images/logo.svg" alt="CAD-EDU logo, link to homepage">
 	</a >
