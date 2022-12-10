@@ -20,7 +20,7 @@
 }
 
 html {
-	background: url("assets/images/dot_repeating.svg");
+	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
@@ -409,7 +409,8 @@ p {
 	font-size: 16px;
 }
 
-.articleLayout a video {
+.articleLayout a video,
+.articleLayout a img {
 	width: 100%;
 	margin: 0 0 0 auto;
 	aspect-ratio: 1/1;
@@ -429,7 +430,6 @@ p {
 		". foot .";
 }
 
-.articleLayout a img,
 .articleBody {
 	padding: 8px;
 	box-sizing: border-box;
@@ -656,7 +656,7 @@ p {
 		margin: var(--gap-md) auto;
 	}
 
-	.nav #nav{
+	.nav #nav {
 		margin: var(--gap-md) auto;
 	}
 }
