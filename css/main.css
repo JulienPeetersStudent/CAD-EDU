@@ -19,17 +19,25 @@
 	-webkit-user-select: none;
 }
 
-html {
-	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
+/* html {
+	background: url("/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
-}
+} */
 
-body,
-html {
+html{
 	height: 100%;
 	min-height: 100% !important;
+}
+
+body{
+	height: 100%;
+	min-height: 100% !important;
+	background: url("/assets/images/dot_repeating.svg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 0.75cm;
 }
 
 hr {
@@ -437,6 +445,17 @@ p {
 
 .articleBody p {
 	font-size: 24px;
+}
+
+.articleBody blockquote{
+	padding: 16px;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-decoration: underline var(--col-acc);
+}
+
+.articleBody blockquote a{
+	color: var(--col-main);
 }
 
 .articleBody p::first-letter {
