@@ -19,12 +19,12 @@
 	-webkit-user-select: none;
 }
 
-html{
+html {
 	height: 100%;
 	min-height: 100% !important;
 }
 
-body{
+body {
 	height: 100%;
 	min-height: 100% !important;
 	background: url("/assets/images/dot_repeating.svg");
@@ -45,6 +45,13 @@ hr {
 p {
 	user-select: text;
 	-webkit-user-select: text;
+}
+
+h1 {
+	text-align: center;
+	font-size: 48px;
+	width: fit-content;
+	width: -moz-fit-content;
 }
 
 /* general classes */
@@ -338,11 +345,15 @@ p {
 
 #homeBody {
 	display: grid;
-	grid-template-columns: 1fr minmax(420px, 4fr) 1fr;
+	grid-template-columns: 1fr minmax(480px, 4fr) 1fr;
 	grid-template-areas:
 		". logo ."
 		". main ."
 		". foot .";
+}
+
+#homeBody article > h1 {
+	margin: 0 auto;
 }
 
 #homeLogo {
@@ -440,7 +451,7 @@ p {
 	font-size: 24px;
 }
 
-.articleBody blockquote{
+.articleBody blockquote {
 	padding: 16px;
 	box-sizing: border-box;
 	font-size: 20px;
@@ -448,7 +459,7 @@ p {
 	display: inline-block;
 }
 
-.articleBody blockquote a{
+.articleBody blockquote a {
 	color: var(--col-main);
 	text-decoration: none;
 }
@@ -642,7 +653,7 @@ p {
 			"logo"
 			"main"
 			"foot";
-		padding: 0 40px;
+		padding: 0 10px;
 	}
 
 	#navBody {
