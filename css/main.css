@@ -443,7 +443,7 @@ p {
 	box-sizing: border-box;
 }
 
-.articleBody p {
+.articleBody > p {
 	font-size: 24px;
 }
 
@@ -452,13 +452,15 @@ p {
 	box-sizing: border-box;
 	font-size: 20px;
 	text-decoration: underline var(--col-acc);
+	display: inline-block;
 }
 
 .articleBody blockquote a{
 	color: var(--col-main);
+	text-decoration: none;
 }
 
-.articleBody p::first-letter {
+.articleBody > p::first-letter {
 	font-size: 48px;
 	color: var(--col-acc);
 	font-family: "Times New Roman", Times, serif;
