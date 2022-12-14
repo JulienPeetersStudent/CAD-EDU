@@ -27,7 +27,7 @@ html {
 body {
 	height: 100%;
 	min-height: 100% !important;
-	background: url("/assets/images/dot_repeating.svg");
+	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
@@ -70,7 +70,7 @@ h1 {
 
 .grid-C1 {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr !important;
 }
 
 .grid-C2 {
@@ -409,13 +409,12 @@ h1 {
 .articleLayout a h2 {
 	color: var(--col-main);
 	font-size: 24px;
-	margin: 8px;
-	height: 30px;
+	margin: 8px 4px 2px 8px;
 	grid-area: text;
 }
 
 .articleLayout a p {
-	margin: 38px 4px 4px 8px;
+	margin: 2px 4px 8px 8px;
 	grid-area: text;
 	color: rgb(0, 0, 0);
 	font-size: 16px;
