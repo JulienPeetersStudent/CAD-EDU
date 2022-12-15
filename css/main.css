@@ -27,7 +27,7 @@ html {
 body {
 	height: 100%;
 	min-height: 100% !important;
-	background: url("/assets/images/dot_repeating.svg");
+	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
@@ -203,11 +203,7 @@ h1 {
 	flex-direction: column;
 	height: 50px;
 	line-height: 50px;
-}
-
-.PageTitle {
-	margin: 0 24px;
-	height: 50px;
+	margin: 0 auto;
 }
 
 .linkTitle {
@@ -232,7 +228,7 @@ h1 {
 .dropdown ul {
 	display: flex;
 	flex-direction: column;
-	width: max-content;
+	/* width: max-content; */
 	box-sizing: border-box;
 }
 
@@ -257,6 +253,7 @@ h1 {
 	line-height: 20px;
 	color: var(--b-col-front);
 	text-decoration: none;
+	width: 100%;
 }
 
 .dropdown a:hover,
@@ -617,16 +614,14 @@ h1 {
 			"alternative";
 	}
 
-	
-
-.contact form {
-	display: grid;
-	grid-template-areas:
-		"email"
-		"name"
-		"message"
-		"submit";
-}
+	.contact form {
+		display: grid;
+		grid-template-areas:
+			"email"
+			"name"
+			"message"
+			"submit";
+	}
 
 	#map {
 		margin: 0;
