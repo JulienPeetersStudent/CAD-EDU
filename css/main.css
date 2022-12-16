@@ -27,7 +27,7 @@ html {
 body {
 	height: 100%;
 	min-height: 100% !important;
-	background: url("/assets/images/dot_repeating.svg");
+	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
@@ -418,7 +418,8 @@ h1 {
 }
 
 .articleLayout a video,
-.articleLayout a img {
+.articleLayout a img,
+.articleLayout a figure {
 	width: 100%;
 	margin: 0 0 0 auto;
 	aspect-ratio: 1/1;
@@ -439,7 +440,7 @@ h1 {
 }
 
 .articleBody {
-	padding: 8px;
+	padding: 16px;
 	box-sizing: border-box;
 }
 
@@ -447,8 +448,17 @@ h1 {
 	font-size: 24px;
 }
 
+.articleBody > h1 {
+	text-align: center;
+	width: 100%;
+}
+
+.articleBody > h1:first-child {
+	text-decoration: underline wavy var(--col-acc);
+}
+
 .articleBody blockquote {
-	padding: 16px;
+	padding: 32px;
 	box-sizing: border-box;
 	font-size: 20px;
 	text-decoration: underline var(--col-acc);
@@ -460,10 +470,13 @@ h1 {
 	text-decoration: none;
 }
 
+.articleBody > hr {
+	margin: 8px auto;
+}
+
 .articleBody > p::first-letter {
 	font-size: 48px;
 	color: var(--col-acc);
-	font-family: "Times New Roman", Times, serif;
 	font-weight: bold;
 	line-height: 48px;
 }
@@ -580,7 +593,7 @@ h1 {
 
 @media only screen and (max-width: 1100px) {
 	.articleBody model-viewer {
-		width: 66%;
+		width: 50%;
 		height: auto;
 		margin-left: auto;
 		margin-right: auto;
@@ -633,7 +646,7 @@ h1 {
 	}
 
 	.articleBody model-viewer {
-		width: 100%;
+		width: 50%;
 		height: auto;
 		aspect-ratio: 3/2;
 		display: inline-block;
@@ -646,6 +659,12 @@ h1 {
 			"main"
 			"foot";
 		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.articleBody model-viewer {
+		width: 100%;
 	}
 }
 
