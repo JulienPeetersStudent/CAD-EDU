@@ -20,13 +20,12 @@
 }
 
 html {
-	height: 100%;
-	min-height: 100% !important;
+	height: max-content;
+	min-height: 100vh;
 }
 
 body {
-	height: 100%;
-	min-height: 100% !important;
+	min-height: 100vh;
 	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
@@ -484,6 +483,7 @@ nav {
 .articleBody > h1 {
 	text-align: center;
 	width: 100%;
+	margin-bottom: 8px;
 }
 
 .articleBody > h1:first-child {
@@ -512,9 +512,13 @@ nav {
 
 .articleBody .articleContent {
 	width: 40%;
-	height: auto;
-	aspect-ratio: 1/1;
+	height: min-content;
+	/* aspect-ratio: 1/1; */
 	display: inline-block;
+}
+
+model-viewer.articleContent{
+	aspect-ratio: 1/1;
 }
 
 .articleBody .articleContent.fLeft {
