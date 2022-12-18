@@ -233,6 +233,7 @@ map.accOutline {
 .nav {
 	grid-area: nav;
 	display: flex;
+	flex-wrap: nowrap;
 	min-height: 98px;
 	height: max-content;
 }
