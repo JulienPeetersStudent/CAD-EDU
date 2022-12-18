@@ -39,7 +39,7 @@ if (document.querySelector("#nav")) {
 
 if (document.querySelector(".foot")) {
 	document.querySelector(".foot").innerHTML = `
-	<p class="fRight">AP Hogeschool 2022</p>
+	<p class="fRight">AP Hogeschool 2022&copy</p>
 	<p class="fLeft">Julien Peeters - G-1IoT-D1</p>`;
 }
 
