@@ -171,14 +171,53 @@ map.accOutline {
 }
 
 #nav {
-	display: flex;
+	display: grid;
+	grid-template-areas: "logo navigation search";
 	background-color: var(--col-main);
 	width: max-content;
 	height: 50px;
-	min-height: 50px;
 	grid-area: nav;
 	margin: var(--gap-str) auto;
 	z-index: 100;
+}
+
+#nav > search {
+	grid-area: search;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+#nav > search:focus-within {
+	width: fit-content;
+}
+
+#nav > search > * {
+	flex-shrink: 0;
+}
+
+#nav > search > button {
+	width: 46px;
+	height: 46px;
+	background: var(--b-col-front);
+	border: none;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#nav > search > button > svg {
+	color: var(--col-main);
+}
+
+#nav > search > input {
+	height: 46px;
+	border: none;
+	outline: none;
+	margin: 2px;
+	border-radius: 4px;
+	font-size: 24px;
 }
 
 #nav ul,
@@ -772,5 +811,16 @@ model-viewer.articleContent {
 
 	.nav #nav {
 		margin: var(--gap-md) auto;
+	}
+
+	#nav {
+		grid-template-areas:
+			"logo navigation"
+			"search search";
+		height: 100px;
+	}
+
+	#nav > search {
+		width: fit-content;
 	}
 }
