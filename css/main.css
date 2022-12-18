@@ -26,7 +26,7 @@ html {
 
 body {
 	min-height: 100vh;
-	background: url("/assets/images/dot_repeating.svg");
+	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
