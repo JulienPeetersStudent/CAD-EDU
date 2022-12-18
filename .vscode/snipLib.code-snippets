@@ -22,4 +22,11 @@
 		"body":["<i class='iconGlobe'></i>"],
 		"description": "Insert globe icon"
 	}
+
+	"Article": {
+		"scope": "html",
+		"prefix": "artBody",
+		"body":["<section class='articleBody blur-background rounded shadow'>", "<h1>$1</h1>", "<p>$2</p>", "$3", "</section>"],
+		"description": "Insert globe icon"
+	}
 }
