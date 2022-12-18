@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 	<head>
-		<link rel="icon" href="/CAD-EDU/favicon.png" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+		<link rel="icon" href="/favicon.png" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="/CAD-EDU/css/main.css" />
+		<link rel="stylesheet" href="/css/main.css" />
 		<title>3D Printen - CAD-EDU</title>
 	</head>
 
@@ -20,7 +20,7 @@
 		</nav>
 		<main class="content z1 grid-gap-h-str grid-gap-v-str">
 			<section class="articleBody blur-background rounded shadow">
-				<model-viewer title="Export van een persoonlijk project, UM2 naar Hbot conversie" class="articleContent fLeft blur-background rounded accOutline" interaction-prompt="none" min-camera-orbit="auto 60deg 3m" max-camera-orbit="auto 90deg 3m" camera-orbit="0deg 90deg 2m" auto-rotate camera-target="0m 0.387995m 0m" disable-zoom camera-controls environment-image="/CAD-EDU/assets/images/studio.hdr" src="/CAD-EDU/assets/models/3dPrinter.glb"></model-viewer>
+				<model-viewer title="Export van een persoonlijk project, UM2 naar Hbot conversie" class="articleContent fLeft blur-background rounded accOutline" interaction-prompt="none" min-camera-orbit="auto 60deg 3m" max-camera-orbit="auto 90deg 3m" camera-orbit="0deg 90deg 2m" auto-rotate camera-target="0m 0.387995m 0m" disable-zoom camera-controls environment-image="/assets/images/studio.hdr" src="/assets/models/3dPrinter.glb"></model-viewer>
 				<p class="">
 					3D printers zijn het ultieme apparaat voor product ontwikkelaars, aangezien ze het prototyperen van ontwerpen extreem snel maken! Geen duizenden Euros meer aan het maken van molds en productie pijplijnen voor één iteratie.
 					<br />
@@ -32,17 +32,29 @@
 					<p>"3D-printen of additieve productie is de constructie van een driedimensionaal object van een CAD-model of een digitaal 3D-model. Het kan worden gedaan in verschillende processen waarin materiaal wordt afgezet, verbonden of gestold onder computerbesturing, waarbij materiaal bij elkaar wordt opgeteld (zoals kunststoffen, vloeistoffen of poederkorrels worden gefuseerd), meestal op laag."</p>
 					<br />
 					<a class="fRight" target="_blank" href="https://en.wikipedia.org/wiki/3D_printing">
-						<i class="bi bi-link"></i> 
+						<i class="bi bi-link"></i>
 						Wikipedia
 					</a>
 				</blockquote>
 			</section>
 			<section class="articleBody blur-background rounded shadow">
 				<h1>FDM printers</h1>
+				<figure class="articleContent fRight">
+					<img class="rounded" src="/assets/images/ultimaker-s5-square-highlight-1.webp" alt="" />
+					<figcaption>
+						Ultimaker S5 <a class="fRight" href="https://ultimaker.com/"><i class="bi bi-link"></i> Ultimaker</a>
+					</figcaption>
+				</figure>
 				<p><abbr title="Fused Deposition Modeling">FDM</abbr> printers gebruiken een feeder motor om plastic door een +200°C nozzle te duwen, die rondgaat per laag om je model te maken. Sommige printers gebruiken 2 of meerdere nozzles om meerdere materialen of kleuren te gebruiken.</p>
 			</section>
 			<section class="articleBody blur-background rounded shadow">
 				<h1>SLA printers</h1>
+				<figure class="articleContent fLeft">
+					<img class="rounded" src="/assets/images/SLAprinting.webp" alt="" />
+					<figcaption>
+						SLA print voorbeeld. <a class="fRight" href="https://www.makerbot.com/stories/engineering/choosing-the-right-3d-printer-fdm-vs-sla/"><i class="bi bi-link"></i> Makerbot</a>
+					</figcaption>
+				</figure>
 				<p>
 					<abbr title="Stereolithographie">SLA</abbr> printers gebruiken een vloeibaar resin dat zich verhard met UV licht tussen 380-410nm golf lengte. Iedere laag word gevormd door UV licht te halen over de resin met een laser die rondbeweegt, of met een opgelicht monochroom scherm; ook gekend als <abbr title="Masked Stereolithographie">MSLA</abbr>. <br />Deze lagen hangen vast aan een printplaat die zich legt in een transparant vat met de resin; na iedere laag wordt de printplaat met de
 					verharde lagen van het vat getrokken, aangezien de resin ook aan het vat zichzelf vastzet.<br />Hiermee zijn er dus stevige onderdelen nodig, zoals <abbr>Lineare Rails</abbr> nodig zodat niets beschadigt wordt.
@@ -50,11 +62,17 @@
 			</section>
 			<section class="articleBody blur-background rounded shadow">
 				<h1>SLS/DMLS printers</h1>
+				<figure class="articleContent fRight">
+					<img class="rounded" src="/assets/images/sharebot-metalone-dmls-3d-printer.jpg" alt="" />
+					<figcaption>
+						Sharebot MetalOne <a class="fRight" href="https://filament2print.com/gb/powder-sls/1024-sharebot-metalone-dmls-3d-printer.html"><i class="bi bi-link"></i> filament2print</a>
+					</figcaption>
+				</figure>
 				<p><abbr title="Selective Laser Sinthering/Direct Metal Laser Sinthering">SLS/DMLS</abbr> printers zijn van industriele graad, kamer vullende machines met zeer fijn plastic of metaal stof dat me een hoge graad laser per laag wordt gesmolten, totdat men het object uit het overige stof.<br />Het is vrij gevaarlijk mee te werken, aangezien de stoffen via de lucht de longen kan beschadigen, en sommige materialen kunnen ontvlambaar zijn.</p>
 			</section>
 		</main>
 		<footer class="foot shadow"></footer>
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-		<script src="/CAD-EDU/js/htmlFill.js"></script>
+		<script src="/js/htmlFill.js"></script>
 	</body>
 </html>

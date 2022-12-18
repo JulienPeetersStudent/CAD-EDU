@@ -26,7 +26,7 @@ html {
 
 body {
 	min-height: 100vh;
-	background: url("/CAD-EDU/assets/images/dot_repeating.svg");
+	background: url("/assets/images/dot_repeating.svg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 0.75cm;
@@ -66,21 +66,21 @@ a {
 	text-decoration: none;
 }
 
-a > *{
+a > * {
 	vertical-align: middle;
 	margin: auto;
 }
 
-a:hover{
+a:hover {
 	color: var(--col-acc);
 	text-decoration: underline wavy var(--col-acc);
 }
 
-table a{
+table a {
 	color: var(--col-main);
 }
 
-table img{
+table img {
 	width: 100%;
 	max-width: 200px;
 	aspect-ratio: 1/1;
@@ -182,7 +182,7 @@ map.accOutline {
 }
 
 #nav ul,
-#nav ol{
+#nav ol {
 	padding-left: 0;
 }
 
@@ -509,7 +509,7 @@ nav {
 	font-size: 24px;
 }
 
-.articleBody > ul{
+.articleBody > ul {
 	margin: 16px 16px 16px 32px;
 	font-size: 20px;
 }
@@ -552,7 +552,7 @@ nav {
 	display: inline-block;
 }
 
-model-viewer.articleContent{
+model-viewer.articleContent {
 	aspect-ratio: 1/1;
 }
 
