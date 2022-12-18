@@ -375,7 +375,8 @@ nav {
 .button {
 	box-sizing: border-box;
 	grid-column: 1/3;
-	width: 200px;
+	min-width: 200px;
+	width: fit-content;
 	height: 50px;
 	background-color: var(--col-main);
 	margin: 0 auto;
@@ -386,6 +387,7 @@ nav {
 	font-size: 30px;
 	text-decoration: none;
 	transition: 0.1s ease-in-out;
+	padding: 0 16px;
 }
 
 .button:hover {
@@ -393,6 +395,7 @@ nav {
 	transform-origin: 50% 50%;
 	outline: solid 2px var(--col-acc);
 	line-height: 46px;
+	text-decoration: none;
 }
 
 .map {
