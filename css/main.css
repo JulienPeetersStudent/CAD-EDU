@@ -480,6 +480,11 @@ nav {
 	font-size: 24px;
 }
 
+.articleBody > ul{
+	margin: 16px 16px 16px 32px;
+	font-size: 20px;
+}
+
 .articleBody > h1 {
 	text-align: center;
 	width: 100%;
