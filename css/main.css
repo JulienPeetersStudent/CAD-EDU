@@ -39,6 +39,7 @@ hr {
 	height: 4px;
 	width: 66%;
 	margin: auto;
+	opacity: 1;
 }
 
 p {
@@ -51,6 +52,7 @@ h1 {
 	font-size: 48px;
 	width: fit-content;
 	width: -moz-fit-content;
+	font-weight: bold;
 }
 
 img {
@@ -61,6 +63,11 @@ img {
 a {
 	color: var(--col-main);
 	text-decoration: none;
+}
+
+a:hover{
+	color: var(--col-acc);
+	text-decoration: underline wavy var(--col-acc);
 }
 
 table a{
@@ -159,6 +166,11 @@ map.accOutline {
 	grid-area: nav;
 	margin: var(--gap-str) auto;
 	z-index: 100;
+}
+
+#nav ul,
+#nav ol{
+	padding-left: 0;
 }
 
 .nav > #nav {
