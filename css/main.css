@@ -176,6 +176,7 @@ map.accOutline {
 	background-color: var(--col-main);
 	width: max-content;
 	height: 50px;
+	min-height: 50px;
 	grid-area: nav;
 	margin: var(--gap-str) auto;
 	z-index: 100;
